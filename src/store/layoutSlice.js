@@ -2,12 +2,12 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const layoutSlice = createSlice({
     name: 'layout',
-    initialState: {
-        sidebarOpen: false,
+    initialState: { // initial status 
+        sidebarOpen: false, // side menu is initially closed
     },
-    reducers: {
+    reducers: { // reductions
         toggleSidebar: (state) => {
-            state.sidebarOpen = !state.sidebarOpen;
+            state.sidebarOpen = !state.sidebarOpen; // switches off if on, switches on if off
         },
     },
 });

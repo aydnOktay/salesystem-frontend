@@ -1,46 +1,54 @@
-import React from "react";
-import { useSelector } from "react-redux";
 import {
-  UsersIcon,
-  DocumentTextIcon,
-  PhotoIcon,
-} from "@heroicons/react/24/outline";
+  Bars2Icon,
+  ChartBarIcon,
+  CursorArrowRippleIcon,
+  UserCircleIcon,
+  UserGroupIcon
+} from '@heroicons/react/16/solid'
 
+import { ClipboardDocumentCheckIcon } from '@heroicons/react/24/outline'
+import { useSelector } from 'react-redux'
 const Sidebar = () => {
-  const sidebarOpen = useSelector((state) => state.layout.sidebarOpen);
+  const sidebarOpen = useSelector((state) => state.layout.sidebarOpen)
 
   return (
     <div
-      className={`${sidebarOpen ? "block" : "hidden"
-        } lg:block lg:w-64 bg-gray-800 text-white`}
+      className={`${sidebarOpen ? 'block w-[173px]' : 'hidden'
+        } lg:block  bg-sidebarcolor text-white h-full`}
     >
-      <div className="p-4">
-      </div>
-      <nav className="mt-4">
-        <a href="#" className="flex items-center py-2 px-4 hover:bg-gray-700">
-          <DocumentTextIcon className="w-5 h-5 mr-2" />
-          Tasks
+
+      <nav className="flex flex-col space-y-5 mt-20">
+
+        <a href="#" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+          <ClipboardDocumentCheckIcon className="w-8 h-8" />
+          <span className="text-xs">Tasks</span>
         </a>
-        <a href="#" className="flex items-center py-2 px-4 hover:bg-gray-700">
-          <UsersIcon className="w-5 h-5 mr-2" />
-          Accounts
+
+        <a href="#" className="flex flex-col items-center py-2 px-4 text-sidebaractive  hover:bg-gray-700">
+          <UserGroupIcon className="w-8 h-8" />
+          <span className="text-xs">Accounts</span>
         </a>
-        <a href="#" className="flex items-center py-2 px-4 hover:bg-gray-700">
-          <PhotoIcon className="w-5 h-5 mr-2" />
-          Contacts
+
+        <a href="#" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+          <UserCircleIcon className="w-8 h-8" />
+          <span className="text-xs">Contacts</span>
         </a>
-        <a href="#" className="flex items-center py-2 px-4 hover:bg-gray-700">
-          <PhotoIcon className="w-5 h-5 mr-2" />
-          Opporunuties
+
+        <a href="#" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+          <CursorArrowRippleIcon className="w-8 h-8" />
+          <span className="text-xs">Opportunities</span>
         </a>
-        <a href="#" className="flex items-center py-2 px-4 hover:bg-gray-700">
-          <PhotoIcon className="w-5 h-5 mr-2" />
-          Workflows
+
+        <a href="#" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+          <Bars2Icon className="w-8 h-8" />
+          <span className="text-xs">Workflows</span>
         </a>
-        <a href="#" className="flex items-center py-2 px-4 hover:bg-gray-700">
-          <PhotoIcon className="w-5 h-5 mr-2" />
-          Insights
+
+        <a href="#" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+          <ChartBarIcon className="w-8 h-8" />
+          <span className="text-xs">Insights</span>
         </a>
+
       </nav>
     </div>
   );
