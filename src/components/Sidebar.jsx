@@ -24,7 +24,7 @@ const Sidebar = () => {
           <span className="text-xs">Tasks</span>
         </a>
 
-        <a href="#" className="flex flex-col items-center py-2 px-4 text-sidebaractive  hover:bg-gray-700">
+        <a href="/accounts" className="flex flex-col items-center py-2 px-4 text-sidebaractive  hover:bg-gray-700">
           <UserGroupIcon className="w-8 h-8" />
           <span className="text-xs">Accounts</span>
         </a>

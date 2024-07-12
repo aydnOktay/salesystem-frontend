@@ -1,56 +1,73 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Bars3Icon, XMarkIcon, ClipboardDocumentCheckIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { toggleSidebar } from "../store/layoutSlice";
-
-import {
-    AdjustmentsHorizontalIcon,
-    ChatBubbleBottomCenterIcon,
-    MagnifyingGlassIcon,
-    UserGroupIcon
-} from '@heroicons/react/16/solid'
-
+import AccountIcon from "../../assets/Icons/AccountIcon";
+import MessagesIcon from "../../assets/Icons/MessagesIcon";
+import SearchIcon from "../../assets/Icons/SearchIcon";
+import FiltersIcon from "../../assets/Icons/FiltersIcon";
+import ClipBoardIcon from "../../assets/Icons/ClipBoardIcon";
 
 const Topbar = () => {
+  const dispatch = useDispatch();
+  const sidebarOpen = useSelector((state) => state.layout.sidebarOpen);
 
-    const dispatch = useDispatch();
-    const sidebarOpen = useSelector((state) => state.layout.sidebarOpen);
+  return (
+    <header className="bg-gray-50 shadow-sm">
+      <div className="grid lg:grid-cols-10 grid-cols-3 items-center justify-between  border-2">
 
-    return (
-        <header className="bg-topbarcolor shadow-sm">
-            <div className="flex items-center  p-4 border-b border-gray-500">
-                <button onClick={() => dispatch(toggleSidebar())} className="lg:hidden">
-                    {sidebarOpen ? (<XMarkIcon className="w-6 h-6" />) : (<Bars3Icon className="w-6 h-6" />)}
-                </button>
-                <nav className="flex space-x-1 m-2 justify-between">
-                    <a href="#" className="flex flex-col items-center py-2 px-4 hover:text-topbaractive hover:bg-sidebarcolor">
-                        <UserGroupIcon className="w-8 h-8" />
-                        <span className="text-xs">Accounts</span>
-                    </a>
-                    <a href="#" className="flex flex-col items-center py-2 px-4 hover:text-topbaractive hover:bg-sidebarcolor">
-                        <ChatBubbleBottomCenterIcon className="w-8 h-8" />
-                        <span className="text-xs">Suggestions</span>
-                    </a>
-
-                    <a href="#" className="flex flex-col items-center py-2 px-4 hover:text-topbaractive hover:bg-sidebarcolor">
-                        <MagnifyingGlassIcon className="w-8 h-8" />
-                        <span className="text-xs">Search</span>
-                    </a>
-                    <a href="#" className="flex flex-col items-center py-2 px-4 hover:text-topbaractive hover:bg-sidebarcolor">
-                        <AdjustmentsHorizontalIcon className="w-8 h-8" />
-                        <span className="text-xs">Filtre</span>
-                    </a>
-                </nav>
-
+        <button
+          onClick={() => dispatch(toggleSidebar())}
+          className="lg:hidden col-span-1 p-4"
+        >
+          {sidebarOpen ? (
+            <XMarkIcon className="w-6 h-6" />
+          ) : (
+            <Bars3Icon className="w-6 h-6" />
+          )}
+        </button>
+        {/* section 1 */}
+        <div className="lg:flex hidden justify-between w-full lg:col-span-3 col-span-2 p-4 px-10 lg:border-r-2 m-0 lg:gap-0 gap-10">
+          <div className="flex gap-4">
+            <div className="flex flex-col items-center justify-center">
+              <AccountIcon width={24} height={24} />
+              <a href="" className="text-xs">Account</a>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <MessagesIcon width={24} height={24} />
+              <p className="text-xs"> Messages</p>
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div className="flex flex-col items-center justify-center">
+              <SearchIcon width={24} height={24} />{" "}
+              <a className="text-xs">Search</a>
             </div>
 
-
-
-            { /*  */}
-        </header>
-
-    );
-
-}
+            <div className="flex flex-col items-center justify-center">
+              {" "}
+              <FiltersIcon width={24} height={24} />
+              <p className="text-xs">Filters</p>
+            </div>
+          </div>
+        </div>
+        {/* section 2 */}
+        <div className="lg:col-span-7 px-10 p-4 lg:flex hidden lg:justify-start justify-end">
+          <div className="flex gap-4">
+            <div className="flex flex-col items-center justify-center">
+              <AccountIcon width={24} height={24} />
+              <p className="text-xs">Account</p>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <ClipBoardIcon width={24} height={24} />
+              <p className="text-xs"> Copy</p>
+            </div>
+          </div>
+        </div>
+        {/* <h1 className="text-xl font-semibold">CMS Yönetim Paneli</h1> */}
+      </div>
+    </header>
+  );
+};
 
 export default Topbar;
