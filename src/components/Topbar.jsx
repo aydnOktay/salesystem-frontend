@@ -29,15 +29,19 @@ const Topbar = () => {
         {/* section 1 */}
         <div className="lg:flex hidden justify-between w-full lg:col-span-3 col-span-2 p-4 px-10 lg:border-r-2 m-0 lg:gap-0 gap-10">
           <div className="flex gap-4">
-            <div className="flex flex-col items-center justify-center">
-              <AccountIcon width={24} height={24} />
-              <a href="" className="text-xs">Account</a>
-            </div>
+            <a href="">
+              <div className="flex flex-col items-center justify-center">
+                <AccountIcon width={24} height={24} />
+                <p href="" className="text-xs">Account</p>
+              </div>
+            </a>
+
             <div className="flex flex-col items-center justify-center">
               <MessagesIcon width={24} height={24} />
               <p className="text-xs"> Messages</p>
             </div>
           </div>
+          
           <div className="flex gap-4">
             <div className="flex flex-col items-center justify-center">
               <SearchIcon width={24} height={24} />{" "}

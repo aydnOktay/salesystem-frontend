@@ -19,7 +19,7 @@ const Sidebar = () => {
 
       <nav className="flex flex-col space-y-5 mt-20">
 
-        <a href="#" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+        <a href="/tasks" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
           <ClipboardDocumentCheckIcon className="w-8 h-8" />
           <span className="text-xs">Tasks</span>
         </a>
@@ -29,22 +29,22 @@ const Sidebar = () => {
           <span className="text-xs">Accounts</span>
         </a>
 
-        <a href="#" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+        <a href="/contacts" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
           <UserCircleIcon className="w-8 h-8" />
           <span className="text-xs">Contacts</span>
         </a>
 
-        <a href="#" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+        <a href="/opportunuties" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
           <CursorArrowRippleIcon className="w-8 h-8" />
           <span className="text-xs">Opportunities</span>
         </a>
 
-        <a href="#" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+        <a href="/workflows" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
           <Bars2Icon className="w-8 h-8" />
           <span className="text-xs">Workflows</span>
         </a>
 
-        <a href="#" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+        <a href="/insights" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
           <ChartBarIcon className="w-8 h-8" />
           <span className="text-xs">Insights</span>
         </a>
