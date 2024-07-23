@@ -6,7 +6,7 @@ import {
   UserGroupIcon
 } from '@heroicons/react/16/solid'
 
-import { ClipboardDocumentCheckIcon } from '@heroicons/react/24/outline'
+import { ClipboardDocumentCheckIcon, Cog6ToothIcon } from '@heroicons/react/24/outline'
 import { useSelector } from 'react-redux'
 const Sidebar = () => {
   const sidebarOpen = useSelector((state) => state.layout.sidebarOpen)
@@ -47,6 +47,11 @@ const Sidebar = () => {
         <a href="/insights" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
           <ChartBarIcon className="w-8 h-8" />
           <span className="text-xs">Insights</span>
+        </a>
+
+        <a href="/insights" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+          <Cog6ToothIcon className="w-8 h-8" />
+          <span className="text-xs">Settings</span>
         </a>
 
       </nav>

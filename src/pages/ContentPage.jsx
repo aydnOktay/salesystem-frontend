@@ -181,7 +181,7 @@ export default function Page() {
               +
             </button>
           </div>
-            <p className="text-sm">Lorem ipsum dolor sit</p>
+          <p className="text-sm">Lorem ipsum dolor sit</p>
         </div>
 
         <div className="flex flex-col col-span-1 px-5 border-b-2 mt-4">
@@ -191,7 +191,7 @@ export default function Page() {
               +
             </button>
           </div>
-            <p className="text-sm">Lorem ipsum dolor sit</p>
+          <p className="text-sm">Lorem ipsum dolor sit</p>
         </div>
 
         <div className="flex flex-col col-span-1 px-5 border-b-2 mt-4">
@@ -201,7 +201,7 @@ export default function Page() {
               +
             </button>
           </div>
-            <p className="text-sm">Lorem ipsum dolor sit</p>
+          <p className="text-sm">Lorem ipsum dolor sit</p>
         </div>
       </div>
     </div>
