@@ -8,6 +8,7 @@ import Workflows from '@/pages/WorkflowsPage';
 import Login from '@/pages/LoginPage';
 import Register from '@/pages/RegisterPage';
 import Settings from '@/pages/SettingsPage';
+import Configure from '@/pages/ConfigurePage';
 
 import Layout from '@/layouts/index';
 import AuthLayout from '@/layouts/AuthLayout';
@@ -25,6 +26,7 @@ export const routes = [
             { path: '/workflows', element: <Workflows /> },
             { path: '/insights', element: <Insights /> },
             { path: '/settings', element: <Settings /> },
+            { path: '/configure', element: <Configure /> },
         ],
     },
     {
