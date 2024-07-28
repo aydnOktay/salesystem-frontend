@@ -3,18 +3,35 @@ import React from "react";
 export default function Page() {
   return (
 
-    <div className="grid grid-cols-10 bg-white relative">
-
-      <div className="col-span-8 sm:col-span-8 p-6">
-        <div className="flex items-center space-x-3 mb-4">
-          <h2>6 Contact Filter</h2>
-          <h1 className="font-bold text-2xl">AZ</h1>
+    <div className="grid grid-cols-10 bg-white relative h-full ">
+      <div className="bg-[#02FFD1] p-2 border-2 absolute bottom-9 left-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="h-12 w-12">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+        </svg>
+      </div>
+      <div className="col-span-8 sm:col-span-8 p-6 max-h-[calc(100vh-72px)] overflow-auto custom-scroll">
+        <div className="flex items-center justify-between space-x-3 mb-4">
+          <div
+            className="flex items-center gap-3"
+          >
+            <h2>6 Contact Filter</h2>
+            <h1 className="font-bold text-2xl">AZ</h1>
+          </div>
           <a href="" className="flex ml-auto border-b-2">Mostra tutti i contatti</a>
         </div>
 
         <div className="grid grid-cols-4 gap-x-4 my-3 items-center">
           <div class="flex items-center space-x-3 justify-start">
-            <img src="/person1.jpeg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <div
+            className="relative"
+            >
+              <span
+                className="absolute -top-5 z-10 px-2 bg-[#02FFD1] border-2  "
+              >
+                badge
+              </span>
+              <img src="/person1.jpeg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            </div>
             <p class="font-semibold">Oktay Aydın</p>
           </div>
           <div>aaydinoktay@gmail.com</div>
@@ -95,6 +112,195 @@ export default function Page() {
             </svg>
           </div>
         </div>
+        <div className="grid grid-cols-4 gap-x-4 my-3 bg-gray-100 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/mattia.jpg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Mattia Noris</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-x-4 my-3 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/person1.jpeg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Oktay Aydın</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 gap-x-4 my-3 bg-gray-100 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/mattia.jpg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Mattia Noris</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-x-4 my-3 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/person1.jpeg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Oktay Aydın</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 gap-x-4 my-3 bg-gray-100 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/mattia.jpg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Mattia Noris</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-x-4 my-3 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/person1.jpeg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Oktay Aydın</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 gap-x-4 my-3 bg-gray-100 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/mattia.jpg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Mattia Noris</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-x-4 my-3 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/person1.jpeg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Oktay Aydın</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 gap-x-4 my-3 bg-gray-100 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/mattia.jpg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Mattia Noris</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-x-4 my-3 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/person1.jpeg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Oktay Aydın</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 gap-x-4 my-3 bg-gray-100 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/mattia.jpg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Mattia Noris</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-x-4 my-3 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/person1.jpeg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Oktay Aydın</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 gap-x-4 my-3 bg-gray-100 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/mattia.jpg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Mattia Noris</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-x-4 my-3 items-center">
+          <div class="flex items-center space-x-3 justify-start">
+            <img src="/person1.jpeg" class="h-[50px] w-[50px] rounded-full" alt="Matteo Mirabella" />
+            <p class="font-semibold">Oktay Aydın</p>
+          </div>
+          <div>aaydinoktay@gmail.com</div>
+          <div>Funnel Consluting</div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#02FFD0" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
       </div>
 
 
@@ -107,11 +313,15 @@ export default function Page() {
                 <h1 className="text-lg font-bold">Account</h1>
                 <h3 className="text-xs">SalesPark</h3>{" "}
               </div>
+
+
               <img
                 alt=""
                 src={"/person1.jpeg"}
                 className="h-12 w-12 rounded-full  border-2 col-span-1 cursor-pointer"
               />
+
+
             </div>
 
             <div className="avatar-group2  mx-2 lg:flex justify-end">

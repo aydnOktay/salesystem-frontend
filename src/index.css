@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
  
+
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #02FFD0;
+  border-radius: 20px;
+}
+
+/* Firefox için */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #02FFD0 #000000;
+}
   .avatar {
     width: 40px;
     height: 40px;

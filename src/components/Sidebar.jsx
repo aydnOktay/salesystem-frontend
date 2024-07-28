@@ -49,7 +49,7 @@ const Sidebar = () => {
           <span className="text-xs">Insights</span>
         </a>
 
-        <a href="/insights" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
+        <a href="/settings" className="flex flex-col items-center py-2 px-4 hover:bg-gray-700">
           <Cog6ToothIcon className="w-8 h-8" />
           <span className="text-xs">Settings</span>
         </a>

@@ -10,8 +10,12 @@ export default {
         sidebarcolor: "#060118",
         sidebaractive: "#00FFCE",
         topbarcolor: "#F9F9F9",
-        topbaractive:"#00FFCE"
-      }
+        topbaractive: "#00FFCE"
+      },
+      screens: {
+        '2k': '1920px',
+        '4k': '3840px',
+      },
     },
   },
   plugins: [],

@@ -7,6 +7,7 @@ import Opportunuties from '@/pages/OpportunutiesPage';
 import Workflows from '@/pages/WorkflowsPage';
 import Login from '@/pages/LoginPage';
 import Register from '@/pages/RegisterPage';
+import Settings from '@/pages/SettingsPage';
 
 import Layout from '@/layouts/index';
 import AuthLayout from '@/layouts/AuthLayout';
@@ -23,6 +24,7 @@ export const routes = [
             { path: '/opportunuties', element: <Opportunuties /> },
             { path: '/workflows', element: <Workflows /> },
             { path: '/insights', element: <Insights /> },
+            { path: '/settings', element: <Settings /> },
         ],
     },
     {
